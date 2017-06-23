@@ -72,8 +72,11 @@ func main() {
 	switch tagType {
 	case "major":
 		iMajV++
+		iMinV = 0
+		iPatV = 0
 	case "minor":
 		iMinV++
+		iPatV = 0
 	case "patch":
 		iPatV++
 	default:
